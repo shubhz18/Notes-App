@@ -1,8 +1,12 @@
-# React + Vite
+Notes App - React
+A simple, intuitive, and responsive Notes App built with React. This app helps you to manage your personal notes, providing a clean and user-friendly interface. It's perfect for quickly jotting down important tasks, reminders, or ideas on the go.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Features
+📝 Create, Edit, and Delete Notes: Easily add, update, and remove notes as per your requirements.
+💾 Persistent Storage: Notes are saved even after you close and reopen the app using local storage.
+🌟 Responsive Design: The app works smoothly on all devices—desktops, tablets, and mobile phones.
+🎨 Clean UI/UX: Simple and modern design for a seamless user experience.
+Tech Stack
+Frontend: React.js
+Styling: CSS (or specify if using a CSS framework like Bootstrap or Tailwind)
+Persistence: LocalStorage
