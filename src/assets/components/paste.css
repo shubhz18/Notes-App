@@ -1,0 +1,224 @@
+/* Refined container styling */
+.container {
+    /* position: relative;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: flex-start;
+    width: 80vw;
+    height: 100vh; */
+    /* padding: 20px; */
+    /* background-color: #121212; */
+
+    /* border: 3px solid white;
+    color: #ffffff; */
+    /* box-sizing: border-box; */
+    overflow: hidden;
+    animation: fadeIn 0.5s ease-in-out; 
+    position: relative;
+    top: 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 80vw;
+    min-height: 30vh; 
+    background-color: #121212;
+    border: 2x solid #333;
+    /* border: 3px solid white; */
+    color: #ffffff;
+    overflow: hidden;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Styling for imp1 section */
+.imp1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    font-size: larger;
+    align-items: center;
+    position: relative;
+    top: 10px;
+    height: 40px;
+    padding: 5px 15px;
+    /* background: #1e1e1e; */
+    border-radius: 5px;
+    border: 2px solid #444;
+}
+
+/* Styling for imp section */
+.imp {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 90vh;
+    /* background-color: #1e1e1e; */
+    color: #ffffff;
+    /* border: 5px solid #333; */
+    padding: 20px;
+}
+
+/* Remove default padding/margin from the root element */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh; 
+    background-color: #121212;
+    overflow-x: hidden;
+}
+
+/* Style for the title input */
+.title-input {
+    width: calc(100% - 40px); /* Avoid extra space caused by padding */
+    max-width: 600px; /* Limit maximum width */
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #333; /* Darker border */
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #1e1e1e;
+    color: #ffffff; /* Light text */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.title-input:focus {
+    border-color: #3b82f6; /* Blue border on focus */
+    box-shadow: 0 0 12px rgba(59, 130, 246, 0.5); /* Glow effect */
+    outline: none;
+    transform: scale(1.02); /* Slight zoom on focus */
+}
+
+/* Style for the content textarea */
+.content-textarea {
+    width: calc(100% - 10px); 
+    height: 65%;
+    max-width: 600px; /* Limit maximum width */
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #333; /* Darker border */
+    border-radius: 10px;
+    font-size: 16px;
+    resize: vertical;
+    min-height: 250px; /* Larger textarea */
+    background-color: #1e1e1e; /* Dark textarea background */
+    color: #ffffff; /* Light text */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.content-textarea:focus {
+    border-color: #3b82f6; /* Blue border on focus */
+    box-shadow: 0 0 12px rgba(59, 130, 246, 0.5); /* Glow effect */
+    outline: none;
+    transform: scale(1.02); /* Slight zoom on focus */
+}
+
+/* Style for the submit button */
+.submit-button {
+    padding: 15px 30px;
+    background-color: #3b82f6; /* Blue button */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.submit-button:hover {
+    background-color: #2563eb; /* Darker blue on hover */
+    transform: translateY(-3px); /* Lift effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.submit-button:active {
+    transform: translateY(0); /* Reset lift effect on click */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Fade-in animation for the container */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.EachBox
+{
+    /* border: 1px solid rgb(244, 18, 18); */
+    border: 2px solid #333;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    height: 15vh;
+    justify-content: space-around;
+    /* align-items: center; */
+
+    width: 50vw;
+    border-radius: 10px;
+    margin: 14px;
+}
+.allBt
+{
+    /* border: 1px solid white; */
+    width: 40vw;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.allBt button
+{
+    
+    height: 20px !important;
+    padding: 15px;
+    width: 5%;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    /* border: 4px solid white; */
+}
+.icon
+{
+    /* border: 1px solid black; */
+    color: black;
+    font-size: 20px;
+    
+}
+.head
+{
+    /* border: 1px solid white; */
+    text-align: left;
+    font-size: x-large;
+    display: flex;
+  
+    justify-content: space-between;
+    /* position: relative; */
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.content{
+    /* border: 1px solid white; */
+    text-align: left;
+    padding-left: 10px;
+    font-weight: 400;
+    white-space: nowrap;        /* Prevent text from wrapping to a new line */
+    overflow: hidden;           /* Hide overflowed content */
+    text-overflow: ellipsis; 
+    
+}

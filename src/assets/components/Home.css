@@ -1,0 +1,122 @@
+/* Refined container styling */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* width: 50vw; */
+    padding: 20px;
+    margin: 0;
+    background-color: #121212;
+    border: 3px solid #333;
+    color: #ffffff;
+    box-sizing: border-box;
+    overflow: hidden;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Styling for imp section */
+.imp {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 90vh;
+    /* background-color: #1e1e1e; */
+    color: #ffffff;
+    /* border: 5px solid #333; */
+    padding: 20px;
+}
+
+/* Remove default padding/margin from the root element */
+html, body {
+    margin: 0;
+    padding: 0;
+    /* width: 10vw; */
+    /* height: 100vh;  */
+    background-color: #121212;
+    overflow-x: hidden;
+}
+
+/* Style for the title input */
+.title-input {
+    width: calc(100% - 40px); /* Avoid extra space caused by padding */
+    max-width: 600px; 
+    padding: 15px;
+    margin-bottom: 20px;
+    /* border: 1px solid #f3ebeb;  */
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #1e1e1e; /* Dark input background */
+    color: #ffffff; /* Light text */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.title-input:focus {
+    border-color: #3b82f6; /* Blue border on focus */
+    box-shadow: 0 0 12px rgba(59, 130, 246, 0.5); /* Glow effect */
+    outline: none;
+    transform: scale(1.02); /* Slight zoom on focus */
+}
+
+/* Style for the content textarea */
+.content-textarea {
+    width: calc(100% - 10px); 
+    height: 65%;
+    max-width: 600px; /* Limit maximum width */
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #333; /* Darker border */
+    border-radius: 10px;
+    font-size: 16px;
+    resize: vertical;
+    min-height: 250px; /* Larger textarea */
+    background-color: #1e1e1e;
+    color: #ffffff; /* Light text */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.content-textarea:focus {
+    border-color: #3b82f6; /* Blue border on focus */
+    box-shadow: 0 0 12px rgba(59, 130, 246, 0.5); /* Glow effect */
+    outline: none;
+    transform: scale(1.02); /* Slight zoom on focus */
+}
+
+/* Style for the submit button */
+.submit-button {
+    padding: 15px 30px;
+    background-color: #3b82f6; /* Blue button */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.submit-button:hover {
+    background-color: #2563eb; /* Darker blue on hover */
+    transform: translateY(-3px); /* Lift effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.submit-button:active {
+    transform: translateY(0); /* Reset lift effect on click */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Fade-in animation for the container */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
